@@ -1,0 +1,35 @@
+
+$font-path: "../fonts/Aktiv-Grostesk";
+
+@font-face {
+    font-family: 'aktiv_groteskregular';
+    src: url('dalton_maag_-_aktiv_grotesk-webfont.woff2') format('woff2'),
+         url('dalton_maag_-_aktiv_grotesk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aktiv_groteskbold';
+    src: url('aktiv-grotesk-bold-webfont.woff2') format('woff2'),
+         url('aktiv-grotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aktiv_groteskitalic';
+    src: url('aktiv-grotesk-italic-webfont.woff2') format('woff2'),
+         url('aktiv-grotesk-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
