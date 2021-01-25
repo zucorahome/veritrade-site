@@ -10,7 +10,7 @@
 	background-position: center center;
 	width: 100%;
 	height:auto;
-	min-height: 600px;  
+	/*min-height: 600px;  */
 	background-repeat: no-repeat;
 	z-index: -100;
 	position: absolute;
@@ -69,7 +69,6 @@
 	min-height: 500px;
 	background: rgba(255,255,255,0.5);
 	position: relative;
-	bottom: 20em;
 }
 
 .comingSoon{
@@ -78,10 +77,10 @@
     background: white;
     display: block;
     margin: 0em auto;
-    position: absolute;
+    padding: 2em 3em;
+ 	position: absolute;
     top: 10%;
     left: 25%;
-    padding: 2em 3em;
 
     p{
     	font-size: 1.5rem;
@@ -107,16 +106,23 @@
 	.info-section{
 		width: 95%;
 		height: auto;
-		min-height: 250px;
+		/*min-height: 250px;*/
+	}
+
+	.comingSoon-container{
+		bottom: 10em;
+	}
+
+	.comingSoon{
+		width: 95%;
+		position: relative;
+		top:0;
+		left:0;
 	}
 }
 
 @media screen and (min-width: 769px){
-	.search-service-container{
-		width: 50%;
-		margin-top:10%;
-	}
-
+	
 	.search-bar-container{
 		button{
 			max-width: 60%;
@@ -131,7 +137,33 @@
 	.info-section{
 		width: 60%;
 		height: auto;
-		min-height: 350px;
-
 	 }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+	.search-service-container{
+		width: 70%;
+		margin-top:10%;
+	}
+
+	.comingSoon-container{
+		bottom: 8em;
+	}
+
+	.comingSoon{
+
+	}
+}
+
+@media screen and (min-width: 1025px){
+	.search-service-container{
+		width: 50%;
+		margin-top: 10%;
+	}
+
+	.comingSoon-container{
+		bottom: 8em;
+	}
+
+
 }
