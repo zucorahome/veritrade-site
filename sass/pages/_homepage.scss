@@ -37,11 +37,18 @@
 	grid-template-columns: 50% 35% 15%;
 	grid-column-gap: 10px;
 	justify-content: space-between;
-	align-content: center;
+	align-content: baseline;
 
 	div{
 		display: flex;
 		flex-direction: column;
+	}
+
+	button{
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 1.10rem;
 	}
 
 	.rounded{
@@ -49,22 +56,82 @@
 	}
 }
 
+.info-section{
+	background-color: rgba(255,255,255,0.85);
+	position: relative;
+	margin: 2em 0;
+}
 
+/*Coming soon section*/
+.comingSoon-container{
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+	background: rgba(255,255,255,0.5);
+	position: relative;
+	bottom: 20em;
+}
+
+.comingSoon{
+    width: 50%;
+    height: auto;
+    background: white;
+    display: block;
+    margin: 0em auto;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    padding: 2em 3em;
+
+    p{
+    	font-size: 1.5rem;
+    	font-weight: 300;
+    }
+}
+
+/*Media queries*/
 @media screen and (max-width:768px){
 	.search-service-container{
 		width:95%;
 		margin-top: 15%;
 	}
 
-	.service-bar-container{
+	.search-bar-container{
 		grid-template-columns: 100%;
+
+		button{
+			margin-top:1em;
+		}
+	}
+
+	.info-section{
+		width: 95%;
+		height: auto;
+		min-height: 250px;
 	}
 }
 
 @media screen and (min-width: 769px){
 	.search-service-container{
-		width: 55%;
+		width: 50%;
 		margin-top:10%;
 	}
 
+	.search-bar-container{
+		button{
+			max-width: 60%;
+			width: auto;
+			/*max-height: 70%;*/
+			height: auto;
+			margin-top:1.45em;
+			padding: 0;
+		}
+	}
+
+	.info-section{
+		width: 60%;
+		height: auto;
+		min-height: 350px;
+
+	 }
 }

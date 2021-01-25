@@ -1,11 +1,42 @@
-/*@import "reset/base.scss";*/
-.navbar-collapse {
-  justify-content: center;
+/*Variables used in other stylesheet*/
+/*Mixins*/
+/*------------------------------------------------Text styling-------------------------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "aktiv_groteskregular";
+  src: url("../fonts/dalton_maag_-_aktiv_grotesk-webfont.woff2") format("woff2"), url("../fonts/dalton_maag_-_aktiv_grotesk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "aktiv_groteskbold";
+  src: url("aktiv-grotesk-bold-webfont.woff2") format("woff2"), url("aktiv-grotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "aktiv_groteskitalic";
+  src: url("aktiv-grotesk-italic-webfont.woff2") format("woff2"), url("aktiv-grotesk-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.white-text {
+  color: white;
 }
 
+.purple-text {
+  color: #434DA0;
+}
+
+.title-fontSize {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Changing By default classes and styling*/
 body {
   margin: 0;
-  font-family: "aktiv_groteskregular", sans-serif;
+  font-family: "aktiv_groteskregular", sans-serif !important;
   font-size: 1.2rem !important;
   font-weight: 500;
   line-height: 1.5;
@@ -13,6 +44,10 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-collapse {
+  justify-content: center;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -30,35 +65,6 @@ body {
     margin: 0 15px;
   }
 }
-@font-face {
-  font-family: "aktiv_groteskregular";
-  src: url("dalton_maag_-_aktiv_grotesk-webfont.woff2") format("woff2"), url("dalton_maag_-_aktiv_grotesk-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "aktiv_groteskbold";
-  src: url("aktiv-grotesk-bold-webfont.woff2") format("woff2"), url("aktiv-grotesk-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "aktiv_groteskitalic";
-  src: url("aktiv-grotesk-italic-webfont.woff2") format("woff2"), url("aktiv-grotesk-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.white-color {
-  color: white;
-}
-
-.title-fontSize {
-  font-size: 2.5rem;
-}
-
-/*Classes*/
-/*Mixins*/
-/*Variables used in other stylesheet*/
 .logo-image {
   width: 90%;
 }
@@ -97,30 +103,93 @@ body {
   grid-template-columns: 50% 35% 15%;
   grid-column-gap: 10px;
   justify-content: space-between;
-  align-content: center;
+  align-content: baseline;
 }
 .search-bar-container div {
   display: flex;
   flex-direction: column;
 }
+.search-bar-container button {
+  color: #434DA0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
 .search-bar-container .rounded {
   border-radius: 10px !important;
 }
 
+.info-section {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  margin: 2em 0;
+}
+
+/*Coming soon section*/
+.comingSoon-container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  bottom: 20em;
+}
+
+.comingSoon {
+  width: 50%;
+  height: auto;
+  background: white;
+  display: block;
+  margin: 0em auto;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  padding: 2em 3em;
+}
+.comingSoon p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/*Media queries*/
 @media screen and (max-width: 768px) {
   .search-service-container {
     width: 95%;
     margin-top: 15%;
   }
 
-  .service-bar-container {
+  .search-bar-container {
     grid-template-columns: 100%;
+  }
+  .search-bar-container button {
+    margin-top: 1em;
+  }
+
+  .info-section {
+    width: 95%;
+    height: auto;
+    min-height: 250px;
   }
 }
 @media screen and (min-width: 769px) {
   .search-service-container {
-    width: 55%;
+    width: 50%;
     margin-top: 10%;
+  }
+
+  .search-bar-container button {
+    max-width: 60%;
+    width: auto;
+    /*max-height: 70%;*/
+    height: auto;
+    margin-top: 1.45em;
+    padding: 0;
+  }
+
+  .info-section {
+    width: 60%;
+    height: auto;
+    min-height: 350px;
   }
 }
 
