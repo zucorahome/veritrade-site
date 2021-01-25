@@ -1,4 +1,35 @@
 /*@import "reset/base.scss";*/
+.navbar-collapse {
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  font-family: "aktiv_groteskregular", sans-serif;
+  font-size: 1.2rem !important;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #36384B !important;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #36384B !important;
+}
+
+/*Media queries*/
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav-item {
+    margin: 0 15px;
+  }
+}
 @font-face {
   font-family: "aktiv_groteskregular";
   src: url("dalton_maag_-_aktiv_grotesk-webfont.woff2") format("woff2"), url("dalton_maag_-_aktiv_grotesk-webfont.woff") format("woff");
@@ -17,6 +48,80 @@
   font-weight: normal;
   font-style: normal;
 }
+.white-color {
+  color: white;
+}
+
+.title-fontSize {
+  font-size: 2.5rem;
+}
+
+/*Classes*/
+/*Mixins*/
 /*Variables used in other stylesheet*/
+.logo-image {
+  width: 90%;
+}
+
+.homepageBackground {
+  background-image: url(../images/kitchen-picture.jpg);
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  z-index: -100;
+  position: absolute;
+  left: 0;
+}
+
+.search-service-container {
+  border: 5px solid #434DA0;
+  border-radius: 20px;
+  height: auto;
+  /*min-height: 200px;*/
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-bar-container {
+  margin: 1em auto;
+  background-color: #434DA0;
+  padding: 13px;
+  border-radius: 13px;
+  height: auto;
+  /*min-height: 50px;*/
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 35% 15%;
+  grid-column-gap: 10px;
+  justify-content: space-between;
+  align-content: center;
+}
+.search-bar-container div {
+  display: flex;
+  flex-direction: column;
+}
+.search-bar-container .rounded {
+  border-radius: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .search-service-container {
+    width: 95%;
+    margin-top: 15%;
+  }
+
+  .service-bar-container {
+    grid-template-columns: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .search-service-container {
+    width: 55%;
+    margin-top: 10%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,8 @@
 
 $font-path: "../fonts/Aktiv-Grostesk";
 
+$fontFamily: 'aktiv_groteskregular',sans-serif;
+
 @font-face {
     font-family: 'aktiv_groteskregular';
     src: url('dalton_maag_-_aktiv_grotesk-webfont.woff2') format('woff2'),
@@ -9,9 +11,6 @@ $font-path: "../fonts/Aktiv-Grostesk";
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'aktiv_groteskbold';
@@ -32,4 +31,13 @@ $font-path: "../fonts/Aktiv-Grostesk";
     font-weight: normal;
     font-style: normal;
 
+}
+
+
+.white-color{
+    color:white;
+}
+
+.title-fontSize{
+    font-size:2.5rem;
 }

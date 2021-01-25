@@ -1,0 +1,70 @@
+
+.logo-image{
+	width:90%;
+}
+
+.homepageBackground{
+	background-image: url(../images/kitchen-picture.jpg);
+	background-size: cover;
+	background-origin: border-box;
+	background-position: center center;
+	width: 100%;
+	height:auto;
+	min-height: 600px;  
+	background-repeat: no-repeat;
+	z-index: -100;
+	position: absolute;
+	left: 0;
+}
+
+.search-service-container{
+		border: 5px solid $purple-color;
+		border-radius: 20px;
+		height: auto;
+		/*min-height: 200px;*/
+		background-color: rgba(0,0,0,0.5);
+	}
+
+.search-bar-container{
+	margin:1em auto;
+	background-color: $purple-color;
+	padding:13px;
+	border-radius: 13px;
+	height: auto;
+	/*min-height: 50px;*/
+	color: white;
+	display: grid;
+	grid-template-columns: 50% 35% 15%;
+	grid-column-gap: 10px;
+	justify-content: space-between;
+	align-content: center;
+
+	div{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rounded{
+		border-radius: 10px !important;
+	}
+}
+
+
+@media screen and (max-width:768px){
+	.search-service-container{
+		width:95%;
+		margin-top: 15%;
+	}
+
+	.service-bar-container{
+		grid-template-columns: 100%;
+	}
+}
+
+@media screen and (min-width: 769px){
+	.search-service-container{
+		width: 55%;
+		margin-top:10%;
+	}
+
+}

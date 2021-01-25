@@ -13,7 +13,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/VeriTrade.png" alt="vertitrade logo image." class="img-fluid logo-image">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownLocation" role="button" data-bs-toggle="dropdown" aria-expand="false">Location</a>
+                <ul class="dropdown-menu" aria-labeledby="dropdownLocation">
+                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownTrades" role="button" data-bs-toggle="dropdown" aria-expand="false">Trades</a>
+                <ul class="dropdown-menu" aria-labeledby="dropdownTrades">
+                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownHelp" role="button" data-bs-toggle="dropdown" aria-expand="false">How we Help</a>
+                        <ul class="dropdown-menu" aria-labeledby="dropdownHelp">
+                            <li><a href="#" class="dropdown-item">Link1</a></li>
+                            <li><a href="#" class="dropdown-item">Link1</a></li>
+                        </ul>
+                    </li>
+           <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownAppointment" role="button" data-bs-toggle="dropdown" aria-expand="false">Schedule Appointment</a>
+                <ul class="dropdown-menu" aria-labeledby="dropdownAppointment">
+                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</nav>
+<section class="container-fluid homepageBackground">
+    <div class="search-service-container mx-auto">
+        <div class="p-2">
+            <h2 class="text-uppercase white-color text-center title-fontSize">Find your home service</h2>
+            <form class="search-bar-container">
+                <div class="">
+                    <label class="form-label">I'm looking for</label>
+                    <input type="text" class="form-control rounded" name="search-text" id="">
+                </div>
+                <div>
+                    <label class="form-label">My postal code</label>
+                    <input type="text" class="form-control rounded" name="postal-code" id="">
+                </div>
+                <button class="btn btn-light">Go</button>
+            </form>
+        </div>
+    </div>
+</section>
+    <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </body>
