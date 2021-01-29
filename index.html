@@ -19,7 +19,7 @@
         <a class="navbar-brand" href="#">
             <img src="images/VeriTrade.png" alt="vertitrade logo image." class="img-fluid logo-image">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -28,28 +28,28 @@
                 <a href="index.html" class="nav-link dropdown-toggle fw-bold" id="dropdownLocation" role="button" data-bs-toggle="dropdown" aria-expand="false">Location</a>
                 <ul class="dropdown-menu" aria-labeledby="dropdownLocation">
                     <li><a href="#" class="dropdown-item">Link1</a></li>
-                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                    <li><a href="#" class="dropdown-item">Link2</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownTrades" role="button" data-bs-toggle="dropdown" aria-expand="false">Trades</a>
                 <ul class="dropdown-menu" aria-labeledby="dropdownTrades">
                     <li><a href="#" class="dropdown-item">Link1</a></li>
-                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                    <li><a href="#" class="dropdown-item">Link2</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownHelp" role="button" data-bs-toggle="dropdown" aria-expand="false">How we Help</a>
                         <ul class="dropdown-menu" aria-labeledby="dropdownHelp">
                             <li><a href="#" class="dropdown-item">Link1</a></li>
-                            <li><a href="#" class="dropdown-item">Link1</a></li>
+                            <li><a href="#" class="dropdown-item">Link2</a></li>
                         </ul>
                     </li>
            <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle fw-bold" id="dropdownAppointment" role="button" data-bs-toggle="dropdown" aria-expand="false">Schedule Appointment</a>
                 <ul class="dropdown-menu" aria-labeledby="dropdownAppointment">
                     <li><a href="#" class="dropdown-item">Link1</a></li>
-                    <li><a href="#" class="dropdown-item">Link1</a></li>
+                    <li><a href="#" class="dropdown-item">Link2</a></li>
                 </ul>
             </li>
           </ul>
@@ -57,7 +57,7 @@
   </div>
 </nav>
 <section class="container-fluid homepageBackground p-0 m-0">
-    <div class="search-service-container mx-auto">
+    <div class="search-service-container mx-auto d-none d-sm-none d-md-none d-lg-block">
         <div class="p-3">
             <h2 class="text-uppercase white-text text-center title-fontSize">Find your home service</h2>
             <form class="search-bar-container">
@@ -74,17 +74,33 @@
         </div>
     </div>
     <div class="info-section mx-auto">
-        <div class="p-3">
+        <div class="p-4">
             <h2 class="text-center title-fontSize text-uppercase purple-text mt-3">How can we help</h2>
+            <div class="info-section-points">
+                <div class="text-center">                    
+                    <span class="number-bullet">1</span>
+                    <p class="text-bullet text-center">Contact Us <br>24/7</p>
+                </div>
+                <div class="text-center">                    
+                    <span class="number-bullet">2</span>
+                    <p class="text-bullet text-center">Schedule <br>Appointment</p>
+                </div>
+                <div class="text-center">                    
+                    <span class="number-bullet">3</span>
+                    <p class="text-bullet text-center">Get the Best <br>Service</p>
+                </div>
+            </div>
+            <!-- Coming soon -->
+            <div class="comingSoon mx-auto">
+                <p class="fw-bold text-center fs-2">Coming Soon!</p>
+                <p>Watch this space for an exciting new way to obtain fast, cost-effective on-demand maintenance and repair services for your household furnishings, major appliances and home systems.</p>
+            </div>
         </div>
     </div>
     <!-- Coming soon section -->
-    <div class="comingSoon-container container-fluid">
-        <div class="comingSoon">
-            <p class="fw-bold text-center fs-2">Coming Soon!</p>
-            <p>Watch this space for an exciting new way to obtain fast, cost-effective on-demand maintenance and repair services for your household furnishings, major appliances and home systems.</p>
-        </div>
-    </div>
+   <!--  <div class="comingSoon-container container-fluid">
+        
+    </div> -->
 </section>
     <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
